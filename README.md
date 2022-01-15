@@ -1,3 +1,4 @@
+<趣味での作成>  
 フォルダ「othello」をダウンロードした後、(Windows Explorerなどで)「othello」中のファイル「othello.html」を開いてください.  
 対人対戦することができます.  
 コンピュータ対戦は別フォルダ「othello_c」でしか実装しておりません.  
