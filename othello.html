@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        othello
+    </title>
+    <link rel="stylesheet" href="othello.css">
+</head>
+
+<body>
+    <pre><script type="text/javascript" src="listener.js"></script> 
+        <script type="text/javascript" src="othello.js"></script> 
+        <noscript>Javascriptが利用できません.</noscript>
+    </pre>
+    <div class="whiteinf">
+        <div class="name">White</div>
+        <div id="W"><span id="W.number"></span></div>
+        <div id="w_time"></div>
+        <div id="w_pass">pass</div>
+        <div class="result"></div>
+    </div>
+
+    <div class="blackinf">
+        <div class="name">Black</div>
+        <div id="B"><span id="B.number"></span></div>
+        <div id="b_time"></div>
+        <div id="b_pass">pass </div>
+        <div class="result"></div>
+    </div>
+
+    <table id="table">
+        <thead>
+            <tr>
+                <th> </th>
+                <td>1 </td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5 </td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td class="last" rowspan="10"></td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th> 1</th>
+                <td id="a1" class="data">
+                    <div></div>
+                </td>
+                <td id="b1" class="data">
+                    <div></div>
+                </td>
+                <td id="c1" class="data">
+                    <div></div>
+                </td>
+                <td id="d1">
+                    <div></div>
+                </td>
+                <td id="e1">
+                    <div></div>
+                </td>
+                <td id="f1">
+                    <div></div>
+                </td>
+                <td id="g1">
+                    <div></div>
+                </td>
+                <td id="h1">
+                    <div></div>
+                </td>
+
+            </tr>
+            <tr>
+                <th> 2</th>
+                <td id="a2">
+                    <div></div>
+                </td>
+                <td id="b2">
+                    <div></div>
+                </td>
+                <td id="c2">
+                    <div></div>
+                </td>
+                <td id="d2">
+                    <div></div>
+                </td>
+                <td id="e2">
+                    <div></div>
+                </td>
+                <td id="f2">
+                    <div></div>
+                </td>
+                <td id="g2">
+                    <div></div>
+                </td>
+                <td id="h2">
+                    <div></div>
+                </td>
+            </tr>
+            <tr>
+                <th> 3</th>
+                <td id="a3">
+                    <div></div>
+                </td>
+                <td id="b3">
+                    <div></div>
+                </td>
+                <td id="c3">
+                    <div></div>
+                </td>
+                <td id="d3">
+                    <div></div>
+                </td>
+                <td id="e3">
+                    <div></div>
+                </td>
+                <td id="f3">
+                    <div></div>
+                </td>
+                <td id="g3">
+                    <div></div>
+                </td>
+                <td id="h3">
+                    <div></div>
+                </td>
+
+            </tr>
+            <tr>
+                <th>4 </th>
+                <td id="a4">
+                    <div></div>
+                </td>
+                <td id="b4">
+                    <div></div>
+                </td>
+                <td id="c4">
+                    <div></div>
+                </td>
+                <td id="d4">
+                    <div>
+                    </div>
+                </td>
+                <td id="e4">
+                    <div></div>
+                </td>
+                <td id="f4">
+                    <div></div>
+                </td>
+                <td id="g4">
+                    <div></div>
+                </td>
+                <td id="h4">
+                    <div></div>
+                </td>
+
+            </tr>
+            <tr>
+                <th> 5</th>
+                <td id="a5">
+                    <div></div>
+                </td>
+                <td id="b5">
+                    <div></div>
+                </td>
+                <td id="c5">
+                    <div></div>
+                </td>
+                <td id="d5">
+                    <div></div>
+                </td>
+                <td id="e5">
+                    <div> </div>
+                </td>
+                <td id="f5">
+                    <div></div>
+                </td>
+                <td id="g5">
+                    <div></div>
+                </td>
+                <td id="h5">
+                    <div></div>
+                </td>
+            </tr>
+            <tr>
+                <th> 6</th>
+                <td id="a6">
+                    <div></div>
+                </td>
+                <td id="b6">
+                    <div></div>
+                </td>
+                <td id="c6">
+                    <div></div>
+                </td>
+                <td id="d6">
+                    <div></div>
+                </td>
+                <td id="e6">
+                    <div></div>
+                </td>
+                <td id="f6">
+                    <div></div>
+                </td>
+                <td id="g6">
+                    <div></div>
+                </td>
+                <td id="h6">
+                    <div></div>
+                </td>
+            </tr>
+            <tr>
+                <th>7 </th>
+                <td id="a7">
+                    <div></div>
+                </td>
+                <td id="b7">
+                    <div></div>
+                </td>
+                <td id="c7">
+                    <div></div>
+                </td>
+                <td id="d7">
+                    <div></div>
+                </td>
+                <td id="e7">
+                    <div></div>
+                </td>
+                <td id="f7">
+                    <div></div>
+                </td>
+                <td id="g7">
+                    <div></div>
+                </td>
+                <td id="h7">
+                    <div></div>
+                </td>
+
+            </tr>
+            <tr>
+                <th>8 </th>
+                <td id="a8">
+                    <div></div>
+                </td>
+                <td id="b8">
+                    <div></div>
+                </td>
+                <td id="c8">
+                    <div></div>
+                </td>
+                <td id="d8">
+                    <div></div>
+                </td>
+                <td id="e8">
+                    <div></div>
+                </td>
+                <td id="f8">
+                    <div></div>
+                </td>
+                <td id="g8">
+                    <div></div>
+                </td>
+                <td id="h8">
+                    <div></div>
+                </td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>　 </th>
+                <td> </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> </td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+
+</html>
